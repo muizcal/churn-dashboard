@@ -92,3 +92,22 @@ git clone https://github.com/yourusername/churn-dashboard.git</pre>
 
 -Streamlit
 
+## Dataset
+
+The dataset includes:
+
+-Customer demographics, contract, and payment info
+
+-Service usage details, tenure, monthly charges
+
+-Churn label (Yes/No)
+
+CSV file: telecom_churn_dataset.csv included in repo
+
+## Author
+
+Abdulmuiz Shittu
+
+   -Portfolio-ready project demonstrating data analysis, visualization, and ML modeling
+
+   -Streamlit dashboard showcases interactive data exploration and predictions
