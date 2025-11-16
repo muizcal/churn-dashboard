@@ -66,10 +66,10 @@ filtered_df = df[
     (df['MonthlyCharges'].between(*monthly_charges_range))
 ]
 
-# --- Tabs ---
-tab1, tab2, tab3, tab4 = st.tabs(["Data Preview", "EDA Charts", "Model Metrics", "Feature Importance"])
 
-# --- TAB 1: Data Preview ---
+tab1, tab2, tab3, tab4, tab5 = st.tabs(["Data Preview", "EDA Charts", "Model Metrics", "Feature Importance", "Dashboard Preview"])
+
+
 with tab1:
     st.subheader("Filtered Data")
     st.dataframe(filtered_df)
