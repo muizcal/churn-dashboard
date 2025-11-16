@@ -52,11 +52,13 @@ _Source: Kaggle Telecom Churn Dataset_
 
 
 
-##  Dashboard Preview
+## Dashboard Preview
 
-![Dashboard Screenshot](your_screenshot.png)
+Click the image below to explore the live interactive dashboard:
 
----
+[![Telecom Churn Dashboard](dashboard_preview.png)](https://churn-dashboard-fmckbtpsvwaes4peh66czz.streamlit.app/)
+
+
 
 ## ⚡ How to Run
 
