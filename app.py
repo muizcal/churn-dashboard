@@ -169,3 +169,17 @@ with tab4:
     fig_fi, ax_fi = plt.subplots(figsize=(10,6))
     sns.barplot(x=feat_importance.values, y=feat_importance.index, palette='viridis', ax=ax_fi)
     st.pyplot(fig_fi)
+
+with tab5:
+    st.subheader("Combined Dashboard Preview")
+    fig, axes = plt.subplots(2, 2, figsize=(16,12))
+    sns.countplot(x='Churn', data=filtered_df, palette='coolwarm', ax=axes[0,0])
+    axes[0,0].set_title('Churn Distribution')
+    sns.boxplot(x='Churn', y='MonthlyCharges', data=filtered_df, palette='Set2', ax=axes[0,1])
+    axes[0,1].set_title('Monthly Charges vs Churn')
+    sns.boxplot(x='Churn', y='Tenure', data=filtered_df, palette='Set3', ax=axes[1,0])
+    axes[1,0].set_title('Tenure vs Churn')
+    sns.barplot(x=feat_importance.values, y=feat_importance.index, palette='viridis', ax=axes[1,1])
+    axes[1,1].set_title('Feature Importance')
+    plt.tight_layout()
+    st.pyplot(fig)
